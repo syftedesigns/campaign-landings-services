@@ -1,0 +1,80 @@
+<section>
+    <div class="container">
+        <div class="col text-left">
+            <h5 class="font-14 LinotteRegular">
+                What do you need for your business?
+            </h5>
+            <div class="space-15"></div>
+            <div class="row">
+                <div class="col-10">
+                    <h5 class="LinotteRegular font-20">I'm looking for a website</h5>
+                    <small class="text-muted LinotteRegular">                
+                      Includes Landing pages, Web Applications, Online Chats, Web Services, Payment Platforms, Among other services.
+                    </small>
+                </div>
+                <div class="col">
+                    <mat-slide-toggle [disabled]="canCheck" color="primary" (toggleChange)="RedirectModal('campaign/website');" class="LinotteRegular"></mat-slide-toggle>
+                </div>
+                <div class="space-40"></div>
+                <section class="offset-1 border-separator"></section>
+            </div>
+            <div class="space-30"></div>
+            <div class="row">
+                <div class="col-10">
+                    <h5 class="LinotteRegular font-20">I'm looking for a ecommerce</h5>
+                    <small class="text-muted LinotteRegular">                
+                      Includes Professional Themes, CRM like opencart, Shopify, Prestashop, Platform Administrative and Marketplaces 
+                  </small>
+                </div>
+                <div class="col">
+                    <mat-slide-toggle [disabled]="canCheck" (toggleChange)="RedirectModal('campaign/ecommerce');" class="LinotteRegular"></mat-slide-toggle>
+                </div>
+                <div class="space-40"></div>
+                <section class="offset-1 border-separator"></section>
+            </div>
+            <div class="space-30"></div>
+            <div class="row">
+                <div class="col-10">
+                    <h5 class="LinotteRegular font-20">I'm looking for a mobile application</h5>
+                    <small class="text-muted LinotteRegular">                
+                      Includes Natives Apps, Hybrids Apps, PWA Apps and APIs. 
+                  </small>
+                </div>
+                <div class="col">
+                    <mat-slide-toggle [disabled]="canCheck" (toggleChange)="RedirectModal('campaign/applications');" class="LinotteRegular"></mat-slide-toggle>
+                </div>
+                <div class="space-40"></div>
+                <section class="offset-1 border-separator"></section>
+            </div>
+            <div class="space-30"></div>
+            <div class="row">
+                <div class="col-10">
+                    <h5 class="LinotteRegular font-20">I want to create my own brand</h5>
+                    <small class="text-muted LinotteRegular">                
+                      Includes Logo, Graphic Design, Visual Identity, Brand manual and Business cards. 
+                  </small>
+                </div>
+                <div class="col">
+                    <mat-slide-toggle [disabled]="canCheck" (toggleChange)="RedirectModal('campaign/branding');" class="LinotteRegular"></mat-slide-toggle>
+                </div>
+                <div class="space-40"></div>
+                <section class="offset-1 border-separator"></section>
+            </div>
+            <div class="space-30"></div>
+            <div class="row">
+                <div class="col-10">
+                    <h5 class="LinotteRegular font-20">I'm looking for a marketing campaign</h5>
+                    <small class="text-muted LinotteRegular">                
+                      Includes SEO Optimization, Google Ads, Social Media Campaigns, Facebook pixel, Conversion campaigns,
+                      Google Optimize, Marketing Strategies Among other services.   
+                  </small>
+                </div>
+                <div class="col">
+                    <mat-slide-toggle [disabled]="canCheck" (toggleChange)="RedirectModal('campaign/marketing');" class="LinotteRegular"></mat-slide-toggle>
+                </div>
+                <div class="space-40"></div>
+                <section class="offset-1 border-separator"></section>
+            </div>
+        </div>
+    </div>
+</section>
