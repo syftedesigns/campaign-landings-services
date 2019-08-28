@@ -1,0 +1,65 @@
+<particles [params]="particles" [style]="ParticleStyle" [width]="width" [height]="height"></particles>
+<!-- spanish section -->
+<section *ngIf="_lang.LangDefault.language === 'es'">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-center">
+                <div class="space-200"></div>
+                <div class="space-200 d-none d-xl-block"></div>
+                <div class="space-50 d-xl-none"></div>
+                <h1 class="text-white font-22 Aquatico-Regular">
+                    En que podemos ayudarte?
+                </h1>
+                <div class="space-15"></div>
+                <button (click)="OpenAssistant(_lang.LangDefault);" class="LinotteLight font-16" mat-raised-button color="primary">
+                  Explorar servicios
+                </button>
+                <button onclick="location.href = 'https://www.syftedesigns.com/es'" style="margin-left: 1em" class="LinotteLight font-16" mat-raised-button color="light">
+                        <mat-icon class="material-icons">home</mat-icon>&nbsp;
+                        Pagina Principal
+                </button>
+                <div class="space-15"></div>
+                <section class="offset-1" style="border-top: 2px solid white; width: 80%"></section>
+                <div class="space-20"></div>
+                <article>
+                    <p class="text-white LinotteRegular">
+                        Al solicitarnos algún servicio, no solicitaremos ningún tipo de información confidencial, solo su información de contacto. Al afiliarse, usted acepta recibir correos electrónicos de marketing de syfte y nuestra Política de cookies.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end spanish -->
+<!-- english translator -->
+<section *ngIf="_lang.LangDefault.language === 'en'">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-center">
+                <div class="space-200"></div>
+                <div class="space-200 d-none d-xl-block"></div>
+                <div class="space-50 d-xl-none"></div>
+                <h1 class="text-white font-22 Aquatico-Regular">
+                    How can we help you?
+                </h1>
+                <div class="space-15"></div>
+                <button (click)="OpenAssistant(_lang.LangDefault);" class="LinotteLight font-16" mat-raised-button color="primary">
+                  Explore services
+                </button>
+                <button onclick="location.href = 'https://www.syftedesigns.com/'" style="margin-left: 1em" class="LinotteLight font-16" mat-raised-button color="light">
+                    <mat-icon class="material-icons">home</mat-icon>&nbsp;
+                    Home
+                </button>
+                <div class="space-15"></div>
+                <section class="offset-1" style="border-top: 2px solid white; width: 80%"></section>
+                <div class="space-20"></div>
+                <article>
+                    <p class="text-white LinotteRegular">
+                        When requesting any service from us, we will not ask for any kind of confidential information, only your contact information. By affiliating you are accepting to receive marketing emails from syfte and our Cookies policy.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end english -->

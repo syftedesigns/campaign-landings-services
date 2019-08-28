@@ -14,7 +14,7 @@ export class LoaderComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.dialogRef.close(true);
-      window.location.href = `https://www.syftedesigns.com/${this._path}`;
+      location.href = `https://www.syftedesigns.com/${this._path}`;
     }, 1000);
   }
 

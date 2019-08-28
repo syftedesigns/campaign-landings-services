@@ -8,11 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgwWowModule } from 'ngx-wow';
 import { PublicComponent } from './components/public/public.component';
 import { AngularMaterialModule } from './angular-material.module';
+import { StaticModule } from './components/static/static.module';
+import { ServicesModule } from './services/services.module';
+import { PagesComponent } from './components/pages/pages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PublicComponent
+    PublicComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +24,9 @@ import { AngularMaterialModule } from './angular-material.module';
     SYFTE_ROUTES,
     BrowserAnimationsModule,
     NgwWowModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    StaticModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

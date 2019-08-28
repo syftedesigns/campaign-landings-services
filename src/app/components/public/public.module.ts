@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { PublicRoutingModule } from './public.routes';
 import { AngularMaterialModule } from '../../angular-material.module';
 import { ParticlesModule } from 'angular-particle';
+import { SpanishLocatorComponent } from './services-locator/lang/spanish-locator/spanish-locator.component';
+import { StaticModule } from '../static/static.module';
 
 @NgModule({
   imports: [
@@ -16,11 +18,12 @@ import { ParticlesModule } from 'angular-particle';
     FormsModule,
     PublicRoutingModule,
     AngularMaterialModule,
-    ParticlesModule
+    ParticlesModule,
+    StaticModule
   ],
   declarations: [
-    ServicesLocatorComponent
-
+    ServicesLocatorComponent,
+    SpanishLocatorComponent
   ]
 })
 export class PublicModule { }

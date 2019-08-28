@@ -1,5 +1,6 @@
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { PublicComponent } from './components/public/public.component';
+import { PagesComponent } from './components/pages/pages.component';
 
 const routes: Routes = [
     {

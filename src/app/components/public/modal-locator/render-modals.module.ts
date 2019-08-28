@@ -4,24 +4,30 @@ import { ModalLocatorComponent } from './modals/modal-locator.component';
 import { AngularMaterialModule } from '../../../angular-material.module';
 import { RouterModule } from '@angular/router';
 import { LoaderComponent } from './modals/loader.component';
+import { SpanishModalComponent } from './modals/lang/spanish-modal/spanish-modal.component';
+import { StaticModule } from '../../static/static.module';
 
 @NgModule({
   imports: [
     CommonModule,
     AngularMaterialModule,
-    RouterModule
+    RouterModule,
+    StaticModule
   ],
   declarations: [
     ModalLocatorComponent,
-    LoaderComponent
+    LoaderComponent,
+    SpanishModalComponent
   ],
   exports: [
     ModalLocatorComponent,
-    LoaderComponent
+    LoaderComponent,
+    SpanishModalComponent
   ],
   entryComponents: [
     ModalLocatorComponent,
-    LoaderComponent
+    LoaderComponent,
+    SpanishModalComponent
   ]
 })
 export class RenderModalsModule { }

@@ -1,0 +1,30 @@
+<mat-toolbar class="transparent-bg menu-sticky menu-mg">
+    <mat-toolbar-row>
+        <div class="space-30"></div>
+        <button onclick="$(`#button-menu`).trigger('click');" [matMenuTriggerFor]="menu" cdkFocusInitial mat-fab color="primary">
+        <mat-icon class="example-icon font-24 text-white pointer">
+          translate
+        </mat-icon>
+    </button>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm text-left">
+                        <mat-menu #menu="matMenu">
+                            <button (click)="ChangeLanguage('es');" class="btn-block" mat-menu-item>
+                                    <mat-icon>g_translate</mat-icon>
+                                    <span class="active">Spanish</span>
+                                  </button>
+                            <button (click)="ChangeLanguage('en');" class="btn-block" mat-menu-item>
+                                    <mat-icon>g_translate</mat-icon>
+                                    <span>English</span>
+                                  </button>
+                        </mat-menu>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </mat-toolbar-row>
+</mat-toolbar>
+<button style="z-index: -1; opacity: 0;" cdkFocusInitial class="btn-block" id="button-menu" [matMenuTriggerFor]="menu" mat-icon-button>
+</button>
